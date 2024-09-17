@@ -53,19 +53,25 @@ B-.->|7. E-tjänsten har tillit till de attribut<br> som behövs och auktorisera
 
 ### E-legitimation
 
-E-legitimation är en elektronisk id-handling som du kan använda för att legitimera dig på ett säkert sätt på inom Ena-federationen. Den är granskad och godkänd för användning i en viss Tillitsnivå.
+E-legitimation är en elektronisk id-handling som du kan använda för att legitimera dig på ett säkert sätt på inom federationen. Den är granskad och godkänd för användning i en viss tillitsnivå.
+
+Exempel: Freja Organisations eID, SITHS elegitimation
 
 ### E-tjänst
 
-Elektroniska tjänster eller E-tjänster är tjänster som produceras och konsumeras i ett elektroniskt medium. E-tjänster i Ena-federationen är granskade och godkända på en viss Tillitsnivå. E-tjänsten ställer krav på konsumenter av tjänsten att uppfyla en viss Tilltisnivå för användning.
+Elektroniska tjänster eller E-tjänster är tjänster som produceras och konsumeras i ett elektroniskt medium. E-tjänster i federationen är granskade och godkända på en viss tillitsnivå. E-tjänsten ställer krav på konsumenter av tjänsten att uppfyla en viss tilltisnivå för användning.
+
+Exempel: Nationella läkemedelslistan, SSBTEK
 
 ### Anvisningstjänst
 
 I en behörighets- och identitetsfederation är det möjligt att erbjuda och konsumera en gemensam anvisningstjänst, som listar vilka Intygsutfärdartjänster som är möjliga för användaren att välja mellan. Syftet med en sådan anvisningstjänst är att låta användaren välja vilken organisation den tillhör och därmed anropa "rätt" Intygsutfärdartjänst.
 
-### Intygsutfärdartjänst/IdP
+### Åtkomstintygtjänst/IdP
 
-Intygsutfärdartjänsten ansvarar för att autentisera användaren, sammanställer de uppgifter uppgifter om användaren som E-tjänsten behöver och leverera dessa uppgifter på ett säkert sätt i ett intyg. Intygsutfärdartjänsten använder flera andra tjäsnter för att genomföra detta; en autentiseringstjänst (eller alternativt en spärrtjänst/revokeringslista) och attributkällor. Uppgifterna hämtas från attributtjänster. Intyget används sedan av e-tjänsten för att styra vad användaren ska få se och göra.
+Åtkomstintygstjänsten ansvarar för att en autentiserad användares uppgifter sammanställs och pakateras för en E-tjänst och leverera dessa uppgifter på ett säkert sätt i ett intyg. Åtkomstintygstjänsten använder flera andra tjäsnter för att genomföra detta; en autentiseringstjänst (eller alternativt en spärrtjänst/revokeringslista) och attributkällor. Uppgifterna hämtas från attributtjänster. Intyget används sedan av e-tjänsten för att styra vad användaren ska få se och göra.
+
+Exempel: SAML IdP
 
 ### Identifieringstjänst 
 
