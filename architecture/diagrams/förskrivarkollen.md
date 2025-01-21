@@ -10,9 +10,11 @@ autonumber
     participant D as Förskrivarkollen
     end
     Note over A,D: TILLIT I FEDERATION
-    A->>C: HTTP GET (trust verified)
-    C-->>A: User not authenticated, redirect Browser to user IdP
-    A->>B: Autenticate request
-    B-->>A: Authenticate and SAML response
-    A->>C: SAML responce to SP 
-    C->>D: User logged in 
+    A->>C: HTTP GET (tillit förkonfigurerat)
+    C-->>A: Användare ej autentiserad, redirect Browser till lokal IdP
+    A->>B: Autentiseringsbegäran
+    B-->>A: Användare autentiseras, SAML attribut hämtade (från katalog)
+    A->>C: SAML skickas till SP
+    C->>C: Verifiera SAML
+    C->>D: Användare inloggad, tilldelad åtkomst mha SAML-attribut 
+    D->>A: Användarsession etablerad
