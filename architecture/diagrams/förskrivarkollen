@@ -1,0 +1,13 @@
+    sequenceDiagram
+    box Region A
+    participant A
+    participant B
+    end
+    box EHM
+    participant C
+    participant D
+    end
+    A->>B: Login
+    J->>A: Great!
+    A->>B: Hello Bob, how is Charley?
+    B->>C: Hello Charley, how are you?
